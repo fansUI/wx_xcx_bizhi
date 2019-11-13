@@ -1,0 +1,32 @@
+<view class='container'>
+  <!-- navigate -->
+  <view class='nav_box' style='height:{{menuInfo.bottom+6}}px'>
+    <view class='nav' 
+    style='top:{{menuInfo.top}}px;width:{{menuInfo.left-20}}px;height:{{menuInfo.height}}px;'>
+      <view class='nav_share'>
+        <i-icon type="send" size='16' />
+        <view>分享</view>
+      </view>
+      <view class='nav_input'>
+        <input value="" class='input' placeholder="" />
+      </view>
+    </view>
+  </view>
+  <view class='hot'>
+    <view class='hot_title'>热门标签</view>
+    <view class='hot_bottom'>
+      <view>个性锁屏</view>
+      <view>手写文字</view>
+      <view>潮流好物</view>
+    </view>
+  </view>
+  <view>
+    <view class='types_title'>热门分类</view>
+    <view class='types'>
+      <view wx:for='{{types}}' class='type'
+      style="margin-right:{{index%2==0?'3%':'0'}};background-image:url({{item.bg}});">
+        <view>{{item.title}}</view>
+      </view>
+    </view>
+  </view>
+</view>

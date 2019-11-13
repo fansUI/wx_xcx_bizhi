@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/so/index",
+    "pages/gift/index",
+    "pages/friends/index",
+    "pages/my/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "壁纸精选lite",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom"
+  },
+  "tabBar": {
+    "color": "#2c2c2c",
+    "selectedColor": "#1296db",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "精选",
+        "iconPath": "/resource/icon/huo.png",
+        "selectedIconPath": "/resource/icon/huo_.png"
+      },
+      {
+        "pagePath": "pages/so/index",
+        "text": "搜索",
+        "iconPath": "/resource/icon/sou.png",
+        "selectedIconPath": "/resource/icon/sou_.png"
+      },
+      {
+        "pagePath": "pages/gift/index",
+        "text": "福利",
+        "iconPath": "/resource/icon/gift.png",
+        "selectedIconPath": "/resource/icon/gift.png"
+      },
+      {
+        "pagePath": "pages/friends/index",
+        "text": "圈子",
+        "iconPath": "/resource/icon/quanzi.png",
+        "selectedIconPath": "/resource/icon/quanzi_.png"
+      },
+      {
+        "pagePath": "pages/my/index",
+        "text": "我的",
+        "iconPath": "/resource/icon/quanzi.png",
+        "selectedIconPath": "/resource/icon/quanzi_.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

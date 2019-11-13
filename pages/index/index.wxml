@@ -1,0 +1,65 @@
+<view class='container'>
+  <!-- navigate -->
+  <view class='nav_box' style='height:{{menuInfo.bottom+6}}px'>
+    <view class='nav' 
+    style='top:{{menuInfo.top}}px;width:{{menuInfo.left-20}}px;height:{{menuInfo.height}}px;'>
+    <view class='nav_share'>
+      <i-icon type="send" size='16' />
+      <view>分享</view>
+    </view>
+    <view class='nav_input'>
+      <input value="" class='input' placeholder="" />
+    </view>
+  </view>
+  </view>
+  <!-- 顶部轮播图 -->
+  <swiper
+    indicator-dots="true" autoplay interval="3000" duration="500">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <!-- 分类 -->
+  <view class='types'>
+    <view class='item' wx:for="{{types}}">
+      <view style='background-image:url({{item.icon}});width:60rpx;height:60rpx;background-size:100% 100%;'></view>
+      <view>{{item.title}}</view>
+    </view>
+  </view>
+  <view class='hot'>
+    <view class='hot_top'>
+      <view class='hot_title'>热门专辑</view>
+      <view class='hot_more'>更多></view>
+    </view>
+    <view class='hot_bottom'>
+      <view calss='hot_left' style='background-image:url(https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1246105311,2841303859&fm=26&gp=0.jpg);'></view>
+      <view class='hot_right' style='background-image:url(https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1875554302,516421561&fm=26&gp=0.jpg);'></view>
+    </view>
+  </view>
+  <!-- 圈子动态 -->
+  <view class='circle'>
+    <view class='circle_title'>圈子动态</view>
+    <scroll-view scroll-x>
+      <view class='scroll-view_item'>1</view>
+      <view class='scroll-view_item'>2</view>
+      <view class='scroll-view_item'>3</view>
+      <view class='scroll-view_item'>4</view>
+      <view class='scroll-view_item'>5</view>
+      <view class='scroll-view_item'>6</view>
+      <view class='scroll-view_item'>7</view>
+      <view class='scroll-view_item'>8</view>
+      <view class='scroll-view_item'>9</view>
+    </scroll-view>
+  </view>
+  <view class='news'>
+    <view wx:for='{{news}}' 
+      style='color:{{item.color}};background-color:{{item.bgColor}};'>{{item.text}}</view>
+  </view>
+  <view class='lists'>
+    <view wx:for="{{lists}}" class="{{index%3==0||index%3==1 ? 'mr2' : ''}}">
+      <image src='{{item}}'></image>
+    </view>
+  </view>
+</view>
